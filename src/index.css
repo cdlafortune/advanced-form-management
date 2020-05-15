@@ -16,6 +16,28 @@ h1 {
   font-size: 4rem;
 }
 
+form {
+  padding: 5%;
+  margin: 5%;
+  font-size: 1.5rem;
+}
+
+input {
+  margin: 2% 0;
+}
+
+.button-holder {
+  text-align: center;
+}
+
+button {
+  background-color: #EAC67A;
+  color: white;
+  font-size: 1.5rem;
+  margin: 2%;
+
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
