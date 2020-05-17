@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import Form from "./Form";
+import Users from "./Users";
 
 
 function App() {
-  const [user, setUser] = useState([{
+  const [users, setUser] = useState([{
     name: "",
     email: "",
     password: "",
@@ -17,13 +18,14 @@ function App() {
       password: person.password,
       terms: false
     }
-    setUser([...user, newUser]);
+    setUser([...users, newUser]);
   };
 
   return (
     <div className="App">
       <h1>Sign Up</h1>
       <Form addUser = {addUser} />
+      <Users users={users} />
     </div>
   );
 }

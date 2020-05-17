@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import * as yup from "yup";
+import Axios from "axios";
 
 
 export default function Form(props) {
@@ -14,6 +15,10 @@ export default function Form(props) {
             e.preventDefault();
             props.addUser(formState);
             setFormState({name:"", email:"", password:"", terms:false});
+            Axios
+                .post("https://reqres.in/api/users", formState)
+                .then(response => console.log(response))
+                .catch(err => console.log(err));
         };
 
         const formSchema = yup.object().shape({
@@ -115,7 +120,7 @@ export default function Form(props) {
                 <br />
 
                 <div className="button-holder">
-                    <button type="submit">Submit</button>
+                    <button type="submit" id="submit">Submit</button>
                 </div>
                 
     

@@ -31,14 +31,24 @@ input {
 }
 
 button {
-  background-color: #EAC67A;
+  background-color: teal;
   color: white;
   font-size: 1.5rem;
   margin: 2%;
 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.users-container {
+  padding: 5%;
+  margin: 5%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.user {
+  background-color: white;
+  color: #18121E;
+  padding: 2%;
+  flex-flow: column wrap;
+  justify-content: left;
 }

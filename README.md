@@ -64,16 +64,16 @@ We want to create a form to onboard a new user to our system. We need at least t
 STEP 2 - Implement Form Validation and Error Messaging
 Form validation is one of the facets of an application that makes it feel polished and controlled from a user perspective. With that in mind, implement the following:
 
- Using Yup, set up at least two different validations along with custom error messages that will display on screen when validation fails.
+[x]Using Yup, set up at least two different validations along with custom error messages that will display on screen when validation fails.
 STEP 3 - Make a POST Request
 Being able to POST data is a key skill of any developer, no matter your skill level.
 
- Craft a POST request using axios that sends your form data to the following endpoint: https://reqres.in/api/users
- Verify using a console.log() that you are receiving a successful response back
+[x]Craft a POST request using axios that sends your form data to the following endpoint: https://reqres.in/api/users
+[x]Verify using a console.log() that you are receiving a successful response back
 (Note: For those that are curious, we're using reqres.in for this assignment's API. It's a free API that allows us to simulate a POST request for any data that we send it. Pretty awesome!)
 
 STEP 4 - Display Returned Data to Screen
-When you get your data back, you will want to do something with it, right? Let's display a list of users in our app.
+[x]When you get your data back, you will want to do something with it, right? Let's display a list of users in our app.
 
  Set up a state property called users that is initialized with an empty array
  Every time you make a POST request, and get that new user data back, update your users state with the new user added to the array
@@ -85,3 +85,18 @@ The following are stretch goals that you should attempt after you meet MVP for y
  Implement a dropdown menu in your form. Add a role value to your state and add a dropdown with different roles for your users.
  Create 3 new inputs inside your form of your choice along with corresponding validation and error messaging
  Add to your existing handling so that, if a user inputs their email as waffle@syrup.com, they receive an error message in their form that says "That email is already taken."
+
+
+ CYPRESS ASSIGNMENT
+ Step 2: Write and Run Tests
+In order to complete this challenge you will need to write and run the following tests. They do not need to pass, so long as the reasons they are failing is legitimate.
+
+Set up tests that will...
+
+ Get the Name input and type a name in it.
+ Use an assertion to check if the text inputted contains the name you provided (Hint: use the .should assertion)
+ Get the Email input and type an email address in it
+ Get the password input and type a password in it
+ Set up a test that will check to see if a user can check the terms of service box
+ Check to see if a user can submit the form data
+ Check for form validation if an input is left empty
